@@ -1,0 +1,562 @@
+
+/*google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*global css*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,span,button,input{
+	font-family: 'Open Sans', sans-serif;
+}
+a,a:hover{
+	text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/************************************
+          header part css
+ ************************************/
+ header{
+ 	width: 100%;
+ 	background-image: url(../img/banner-1.png);
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-size: cover;
+ 	height: 100vh;
+ 	position: relative;
+ }
+ .fixed{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  left: 0px;
+ /* right: 0px;*/
+  background: rgba(0,0,0,0.6);
+  color: white;
+  z-index: 9999;
+ }
+ .overlay{
+ 	background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+ .navbar{
+ 	padding: 25px 0px;
+ }
+ .nav-link{
+ 	color: white !important;
+ 	font-weight: 500;
+ 	font-size: 12px;
+ 	margin-left: 25px;
+ }
+ .navbar-brand{
+ 	color: white !important;
+ 	font-weight: 600;
+ 	font-size: 25px;
+ }
+ .banner-text{
+ 	width: 100%;
+ 	height: 60vh;
+ 	color: white;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: column;
+ }
+ .banner-text h1{
+ 	font-size: 50px;
+ 	font-weight: 600;
+ 	letter-spacing: 2px;
+ }
+ .banner-text h5{
+ 	font-size: 18px;
+ 	font-weight: 400;
+ 	margin-top: 25px;
+ }
+ .icon{
+ 	text-align: center;
+ }
+ .icon a i{
+ 	height: 40px;
+ 	width: 40px;
+ 	background-color: #ffb233;
+ 	border-radius: 50%;
+ 	color: white;
+ 	line-height: 40px;
+ }
+ /************************************
+         about me part css
+ ************************************/
+ .about-me{
+ 	width: 100%;
+ 	text-align: center;
+ 	padding: 80px 0px;
+ }
+ .info{
+ 	padding: 0px 100px;
+ }
+ .title{
+ 	letter-spacing: 4px;
+ 	margin-bottom: 45px;
+ }
+ .about-me .info img{
+ 	width: 100px;
+ 	height: 100px;
+ 	border-radius: 100%;
+ }
+ .name{
+ 	margin-top: 20px;
+ 	color: #A8A2A2;
+ }
+ .desc{
+ 	margin: 30px 0px;
+ 	font-weight: 500;
+ }
+ .social-media{
+ 	text-align: center;
+ }
+ .social-media ul li{
+ 	list-style: none;
+ 	display: inline-block;
+ 	margin: 26px;
+ }
+ .social-media ul li a i{
+ 	height: 40px;
+ 	width: 40px;
+ 	background-color: #c6c6c5;
+ 	border-radius: 50%;
+ 	color: white;
+ 	line-height: 40px;
+ 	transition: all 0.5s ease-in-out;
+ }
+  .social-media ul li a i:hover{
+  	background-color: #ffb233;
+  	transition: all 0.5s ease-in-out;
+  }
+  .contact-btn{
+  	text-align: center;
+  }
+  .contact-btn button{
+  	background: none;
+  	padding: 15px 50px;
+  	border: 2px solid #51a351;
+  	color: #51a351;
+  	border-radius: 5px;
+  	margin: 20px 0px;
+  }
+ /************************************
+         service type part css
+ ************************************/
+  .service-type{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0px;
+    background: url(../img/whatIsay.png);
+    background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-size: cover;
+ 	height: 80vh;
+    position: relative;
+  }
+  .overlay{
+ 	background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+ .service-type .title{
+ 	color: white !important;
+ 	font-weight: 600;
+ }
+ .type-icon{
+ 	padding: 60px 0px;
+ }
+ .type-icon ul li{
+ 	list-style: none;
+ 	display: inline-block;
+ 	margin-left: 40px;
+ }
+ .type-icon ul li a i{
+ 	list-style: none;
+ 	display: inline-block;
+ 	height: 80px;
+ 	width: 80px;
+ 	text-align: center;
+ 	font-size: 30px;
+ 	background-color: #ffb233 !important;
+ 	border-radius: 50%;
+ 	color: white !important;
+ 	line-height: 80px;
+ 	border: 3px solid #ffb233;
+ 	transition: all 0.5s ease-in-out;
+ }
+ .type-icon ul li a i:hover{
+ 	border-color: #735629;
+ 	transition: all 0.5s ease-in-out;
+ }
+ .type-icon ul li a p{
+ 	color: white;
+ 	margin-top: 30px;
+ }
+ /************************************
+         service count part css
+ ************************************/
+.service-count{
+	width: 100%;
+	padding: 100px 0px;
+	background: #f3f4ff;
+}
+.count-info{
+	text-align: center;
+}
+.count-info h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+.count-info .line{
+   width: 20%;
+   height: 2px;
+   background-color: green;
+   margin: 20px auto;
+}
+.count-info p{
+   font-size: 20px;
+   font-style: italic;
+}
+/************************************
+         portfolio part css
+ ************************************/
+.portfolio{
+  width: 100%;
+  text-align: center;
+  padding: 80px 0px;
+  letter-spacing: 2px;
+}
+.portfolio h2{
+	font-size: 32px;
+	font-weight: 600;
+}
+.cat-list{
+	text-align: center;
+	padding: 40px 0px;
+}
+.cat-list ul li{
+	list-style: none;
+	display: inline-block;
+	letter-spacing: 0px !important;
+	margin-left: 22px;
+	color: black !important;
+}
+.cat-list ul li a{
+	color: black !important;
+}
+.gallery{
+  display: flex;
+  justify-content: center;
+}
+.img-1 {
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.project-hover{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 0%;
+  background: rgba(0,0,0,0.6);
+  transition: all 0.5s ease-in-out;
+  color: white;
+  text-align: left;
+}
+.img-1:hover .project-hover{
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.project-hover h2{
+  color: #19bd9a;
+}
+.project-hover .line{
+  height: 2px;
+  width: 70px;
+  background: #19bd9a;
+  margin: 15px 0px;
+}
+.project-hover a i{
+  color: #898683;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #898683;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.5s ease-in-out;
+}
+.hover-padding{
+  padding: 30px 20px;
+}
+.project-hover .hover-icon{
+  text-align: center;
+  padding: 10px 0px;
+}
+.project-hover a i:hover{
+  color: white;
+  border: 2px solid white;
+  transition: all 0.5s ease-in-out;
+}
+.img-p{
+	width: 100%;
+	padding: 20px 0px;
+}
+.img-btn{
+	text-align: center;
+    padding-top: 50px !important;
+}
+.img-btn button{
+    padding: 10px 48px;
+    border: 2px solid green;
+    background: green;
+    color: white;
+    border-radius: 6px;
+    font-size: 12px;
+   box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.4); 
+}
+/************************************
+         testimonial part css
+ ************************************/
+.testimonial{
+    width: 100%;
+    text-align: center;
+    padding: 80px 0px;
+    letter-spacing: 2px;
+    background: url(../img/testimonial.png);
+    background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-size: cover;
+ 	height: 100vh;
+ 	font-weight: 600;
+}
+.testimonial h2{
+   font-weight: 600;
+}
+.comment{
+   padding: 10px 160px;
+}
+.comment .content{
+   letter-spacing: 0px !important;
+   font-weight: 400 !important;
+   line-height: 40px;
+   margin: 20px 0px;
+}
+.comment h4{
+  margin-top: 20px;
+  letter-spacing: 1px !important;
+  font-size: 24;
+  font-weight: 600;
+}
+.comment p{
+	font-weight: 400;
+	letter-spacing: 0px !important;
+}
+.owl-carousel .owl-item img{
+	width: 12% !important;
+	margin: 0 auto;
+}
+.owl-theme .owl-nav{
+	display: none;
+}
+/************************************
+         footer part css
+ ************************************/
+.footer{
+	width: 100%;
+	padding: 80px 0px;
+	background: url(../img/footer.png);
+	background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-size: cover;
+ 	height: 100vh;
+ 	color: white;
+}
+.footer .left{
+	text-align: left;
+}
+.footer .left h4{
+	letter-spacing: 2px;
+}
+.footer .left h6{
+	margin-top: 34px;
+}
+.footer .right{
+	text-align: left !important;
+}
+.footer .right h5{
+	letter-spacing: 2px;
+}
+.form{
+    text-align: center !important;
+    margin: 90px 0px 0px 180px;
+}
+.first input{
+  text-align: center !important;
+   background: transparent !important;
+   padding: 10px 55px;
+   border: 2px solid green;
+   margin-left: 10px;
+}
+.second input{
+  background: transparent !important;
+  border: 2px solid green;
+  padding: 50px 210px;
+}
+.form .second{
+  margin-left: 10px;
+}
+.form .btn{
+  margin-top: 10px;
+  margin-left: 9px;
+}
+.form .btn button{
+  padding: 10px 250px;
+  background: green;
+  border: 2px solid green;
+  color: white;
+}
+.first input, .second input, .form .btn button:focus{
+  border-color: green !important;
+}
+
+
+/********************************
+        media query css
+ ********************************/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+.navbar-toggler-icon{
+  background-color: white;
+}
+.testimonial{
+  height: auto;
+}
+.form{
+    text-align: center !important;
+    margin: 80px 0px 0px 20px;
+}
+.footer{
+  height: auto;
+}
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.navbar-light .navbar-toggler-icon{
+  background-color: white;
+}
+.info {
+    padding: 0px 20px;
+}
+.type-icon {
+    padding: 0px 0px;
+}
+.testimonial{
+  height: auto;
+}
+.comment{
+  padding: 0px 20px;
+}
+.form {
+    text-align: center !important;
+    margin: 40px 0px 0px 0px;
+}
+.first{
+  margin-left: 20px;
+}
+.inbox{
+  margin-bottom: 20px;
+}
+.form .second {
+    margin-left: 30px;
+}
+.second input{
+      padding: 10px 54px;
+}
+.form .btn button {
+    padding: 10px 90px;
+}
+.form .btn {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.footer{
+  height: auto;
+}
+
+}
